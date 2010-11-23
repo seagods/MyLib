@@ -1,0 +1,7 @@
+gfortran -g -c mydbesy.f
+gfortran -g -c NAG.f
+gfortran -g -c dplpmu.f
+gfortran -g -c dplpmn.f
+gfortran -g -c splpmn.f
+gfortran -g -c splpmu.f
+
