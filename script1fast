@@ -1,0 +1,7 @@
+g++ -fPIC -Ofast -ffast-math -c -Wall  myGaussElim.cpp
+gcc -fPIC -Ofast -ffast-math -c -Wall  mydbesy.f
+gcc -fPIC -Ofast -ffast-math -c -Wall  i1mach.f
+gcc -fPIC -Ofast -ffast-math -c -Wall  d1mach.f
+gcc -fPIC -Ofast -ffast-math -c -Wall  r1mach.f
+gcc -fPIC -Ofast -ffast-math -c -Wall  pimach.f
+

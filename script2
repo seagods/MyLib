@@ -1,0 +1,2 @@
+g++ -shared -fPIC -Wl,-soname,libmylib.so.0 -o libmylib.so.0.0  myGaussElim.o i1mach.o r1mach.o d1mach.o pimach.o -lc
+rm *.o

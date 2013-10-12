@@ -1,1 +1,31 @@
-These are all available from NETLIB and so on. Hacked them so they compile under gfortran.
+Regarding splpmu.f, splpmn.f,  splpmu.f, and  splpmn.f
+      
+These are part of the slatec library (all available from NETLIB).
+and are all subsidiary to splp --- a slatex linear programming
+routine. The originals do not compile under gfortran due to ancient
+FORTRAN ASSIGN statements. I have hacked these four routines
+ and replaced the ASSIGNS with a set of GOTO statements.
+I keep them copies of them here. The are not actually compiled into 
+ libmylib.
+
+
+Programs:
+are 
+1:  programs written by me
+2:  my modifications of programs written by other people
+3:  programs  written by other people
+
+
+1:     programs written by me
+1.1:   myGaussElim - Gaussian elimination with scaled pivoting, matrix is arbitrary N by N.
+       Gaussian elimination program: fairly well tested, but use linpack or lapack instead!
+       It's here to be developed into something else for an RT application:
+       In this application the matrix elements will depend on the RHS!
+       So myGaussElim assumes we have only one right hand side, and we don't bother
+       storing multipliers or returning permutation vector.
+       We have actually overwritten matrix(i,j) with zero values where the upper triangular
+       is zero --- not necessary, but makes things more obvious at this stage.  
+       
+
+2:  my modifications of programs written by other people
+3:  programs  written by other people

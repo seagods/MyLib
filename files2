@@ -1,5 +1,0 @@
-ar cru mylib.a mydbesy.o dplpmn.o splpmn.o dplpmu.o splpmu.o NAG.o
-ranlib mylib.a
-mv mylib.a ~/libs
-
-

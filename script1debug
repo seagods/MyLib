@@ -1,0 +1,7 @@
+g++ -fPIC -g -c -Wall  myGaussElim.cpp
+gcc -fPIC -g -c -Wall  mydbesy.f
+gcc -fPIC -g -c -Wall  i1mach.f
+gcc -fPIC -g -c -Wall  d1mach.f
+gcc -fPIC -g -c -Wall  r1mach.f
+gcc -fPIC -g -c -Wall  pimach.f
+
