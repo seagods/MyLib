@@ -9,23 +9,37 @@ I keep them copies of them here. The are not actually compiled into
  libmylib.
 
 
-Programs:
-are 
+Programs actually compiled into libmylib:
+ 
 1:  programs written by me
 2:  my modifications of programs written by other people
 3:  programs  written by other people
 
 
 1:     programs written by me
-1.1:   myGaussElim - Gaussian elimination with scaled pivoting, matrix is arbitrary N by N.
-       Gaussian elimination program: fairly well tested, but use linpack or lapack instead!
+       myGaussElim, myMonic2, myMonic3, myMonic4.
+1.1:   myGaussElim - Gaussian elimination with scaled pivoting, matrix
+       is arbitrary N by N. Gaussian elimination program: fairly well
+       tested, but use linpack or lapack instead!
        It's here to be developed into something else for an RT application:
        In this application the matrix elements will depend on the RHS!
-       So myGaussElim assumes we have only one right hand side, and we don't bother
-       storing multipliers or returning permutation vector.
-       We have actually overwritten matrix(i,j) with zero values where the upper triangular
-       is zero --- not necessary, but makes things more obvious at this stage.  
+       So myGaussElim assumes we have only one right hand side, and we don't
+       bother storing multipliers or returning permutation vector.  We have 
+       actually overwritten matrix(i,j) with zero values where the upper triangular
+       is zero --- not necessary, but makes things more obvious at this stage. 
+1.2:   myMonic2.
+       Solves a monic quadratic polynomial with one step Newton-Raphson. Trivial I know
+1.3    myMonic3: Solves a monic cubic polynomial using Abramowitz and Stegun's analytical 
+       formula (Page.17 of Handbook of Mathematical Functions) with Newton-Raphson.
+       (Last step can be necessary under certain circumstances)
+       Needs more work, hope it will "do" for now.   
+1.4    myMonic4: Analytical solution a monic quartic polynomial: This time we do NOT
+       use Abramowitz and Stegun's, Again with Newton-Raphson polish at end.
+       Needs more work, hope it will "do" for now.  
        
 
 2:  my modifications of programs written by other people
-3:  programs  written by other people
+    mydbesy.f //minor hack of slatec routine to get to compile with gfortran
+
+
+3:  programs  written by other people - no modification
