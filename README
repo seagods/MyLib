@@ -29,6 +29,9 @@ Programs actually compiled into libmylib:
        triangular is zero --- not necessary, but makes things more obvious at
        this stage. 
 
+1.1.a: myGaussElimZ - Same as myGaussElim, except the coefficient matrix, the
+       r.h.s, and the soltion vector are all C++ complex numbers (#include <complex>)
+
 1.2:   myMonic2.
        Solves a monic quadratic polynomial with one step Newton-Raphson.
        Trivial I know

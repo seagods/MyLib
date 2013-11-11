@@ -1,4 +1,5 @@
 g++ -fPIC -g -c -Wall  myGaussElim.cpp
+g++ -fPIC -g -c -Wall  myGaussElimZ.cpp
 g++ -fPIC -g -c -Wall  myMonic2.cpp
 g++ -fPIC -g -c -Wall  myMonic3.cpp
 g++ -fPIC -g -c -Wall  myMonic4.cpp
