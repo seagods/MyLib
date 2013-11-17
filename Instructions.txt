@@ -2,8 +2,8 @@ Note in script2, THERE IS NO SPACE between the comma after soname and libmylib!
 
 
 . cd /usr/local/lib
-. ln -s libmylib.so.0.0 libmylib.so
-. ln -s libmylib.so.0.0 libmylib.so.0
+. ln -s libseagods.so.0.0 libseagods.so
+. ln -s libseagods.so.0.0 libseagods.so.0
 . ldconfig -n /usr/local/lib
 
 edit ~/.bashrc and add (if not there already)

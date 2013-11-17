@@ -109,10 +109,10 @@ int myMonic4(double* realcoeffs, complex<double>* roots, bool* reality, bool& al
 
 //   Use Newton-Raphson to "polish" the roots;
 
-     if(imag(roots[0])<tolvalreal){
+     if(abs(imag(roots[0]))<tolvalreal){
                 reality[0]=true; reality[1]=true;
      }
-     if(imag(roots[2])<tolvalreal){
+     if(abs(imag(roots[2]))<tolvalreal){
                 reality[2]=true; reality[3]=true;
      }
 

@@ -51,3 +51,7 @@ Programs actually compiled into libmylib:
 
 
 3:  programs  written by other people - no modification
+
+_______________________________________________________________________________
+Problems and Fixes
+1:  Monic4 had bug, fixed by using abs in test for roots reality
