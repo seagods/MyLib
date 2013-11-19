@@ -3,6 +3,8 @@ g++ -fPIC -g -c -Wall  myGaussElimZ.cpp
 g++ -fPIC -g -c -Wall  myMonic2.cpp
 g++ -fPIC -g -c -Wall  myMonic3.cpp
 g++ -fPIC -g -c -Wall  myMonic4.cpp
+g++ -fPIC -g -c -Wall  myEigVal44.cpp
+g++ -fPIC -g -c -Wall  myEigen44.cpp
 gcc -fPIC -g -c -Wall  mydbesy.f
 gcc -fPIC -g -c -Wall  i1mach.f
 gcc -fPIC -g -c -Wall  d1mach.f
