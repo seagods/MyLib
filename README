@@ -59,6 +59,10 @@ Programs actually compiled into libmylib:
        the eigenvector (x1,x2,x3,x4) always has x4 sufficiently distinct from zero.
        Regard it as a toy routine, there are no safety belts!
        Use LAPACK for serious stuff!
+
+1.7    myEigVal33: Similar to myEigVal44, but for a general 3 by 3 matrix, and uses myMonic3
+
+1.8    myEigen33: Similar to myEigen44, but for a general 3 by 3 matrix, and uses myMonic3
        
 
 **************************************************************************************
