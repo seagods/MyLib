@@ -30,6 +30,9 @@ int myEigen44(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
   double t=Mpp[3][0]; double u=Mpp[3][1]; double v=Mpp[3][2];  double w=Mpp[3][3];
 
 
+ // cout << "ARSE!" << endl; exit(0);
+
+
         double D1,D2,D3,D4,D5,D6,D7,D8,D9;
 
         D1=a*f-e*b;  D2=a*r-c*p;  D3=a*w-d*t;
@@ -237,7 +240,7 @@ int myEigen44(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
              Acomp[i][j]=complex<double>(Mpp[i][j],zero);       
         }
              Acomp[i][i]=Acomp[i][i]-EigVals[2];
-             bcomp[i]=-complex<double>(Mpp[i][dimless],zero)-EigVals[2];
+             bcomp[i]=-complex<double>(Mpp[i][dimless],zero);
         }
              ireturnComp=myGaussElimZ(dimless, Acomp, bcomp, xcomp);
              if(ireturnComp != 0){
@@ -253,10 +256,10 @@ int myEigen44(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
              EigVecs[2][1]=xcomp[1]/normalise;
              EigVecs[2][2]=xcomp[2]/normalise;
              EigVecs[2][3]=complex<double>(one/normalise,zero);
-             EigVecs[3][0]=conj(EigVecs[0][0]);
-             EigVecs[3][1]=conj(EigVecs[0][1]);
-             EigVecs[3][2]=conj(EigVecs[0][2]);
-             EigVecs[3][3]=conj(EigVecs[0][3]);
+             EigVecs[3][0]=conj(EigVecs[2][0]);
+             EigVecs[3][1]=conj(EigVecs[2][1]);
+             EigVecs[3][2]=conj(EigVecs[2][2]);
+             EigVecs[3][3]=conj(EigVecs[2][3]);
      
         }
 
