@@ -36,10 +36,11 @@ int myMonic4(double* realcoeffs, complex<double>* roots, bool* reality, bool& al
      double p,q,r; //coefficients of depressed quartic x^4+px^2+qx+r=0
                    //shift=a_3/4
 
-     double a3sq, a3sqdiv4,a3sqdiv8;
+     double a3sq, a3sqdiv8;
+ //    double a3sqdiv4;
 
      a3sq=a3*a3;
-     a3sqdiv4=a3sq/4.0;
+  //   a3sqdiv4=a3sq/4.0;
      a3sqdiv8=a3sq/8.0;   
 
 //   coefficients of depressed quartic  

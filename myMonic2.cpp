@@ -68,7 +68,7 @@ int myMonic2(double* realcoeffs, complex<double>* roots, bool* reality){
         xvalsq=xval*xval;
         fval=xvalsq+realcoeffs[1]*xval+realcoeffs[0];
         deriv=2.0*xval+realcoeffs[1];
-        newxval;
+     
         if(abs(deriv)>1.0e-16){
           newxval=xval-fval/deriv;
           roots[1]=complex<double>(newxval,zero);

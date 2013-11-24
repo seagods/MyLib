@@ -17,8 +17,6 @@ int myEigen33(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
 
 
   int ireturn=0; //we live in hope!
-  int ireturnReal=0;
-  int ireturnComp=0;
 
   double a=Mpp[0][0]; double b=Mpp[0][1]; double c=Mpp[0][2];
   double d=Mpp[1][0]; double e=Mpp[1][1]; double f=Mpp[1][2]; 
@@ -45,6 +43,9 @@ int myEigen33(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
         int monic_return;
 
         monic_return=myMonic3(coeffs,EigVals,reality,allreal);
+        if(monic_return !=0){
+          cout << "monic_return non zero in Eigen33\n";
+        }
 
         double zero=0.0e0;
         double one=1.0e0;

@@ -34,12 +34,12 @@ int myGaussElimZ(int &dim, complex<double>** Mpp, complex<double>* rhsV, complex
 
 
 	int klarge;
+        klarge=0;
 
         double absval;
         double Tol=1e-14;
 
         bool pivot=true;
-        bool testing=false;
 
 
         double scalevec[dim];

@@ -63,6 +63,11 @@ Programs actually compiled into libmylib:
 1.7    myEigVal33: Similar to myEigVal44, but for a general 3 by 3 matrix, and uses myMonic3
 
 1.8    myEigen33: Similar to myEigen44, but for a general 3 by 3 matrix, and uses myMonic3
+
+1.9    myPickem: stores lists of m choices out N objects in an array
+
+1.9    myRecoverMonic: Calculates the coefficients of a monic polynomial from a vector
+       containing N real roots (easily change over to complex - not bothered yet)
        
 
 **************************************************************************************

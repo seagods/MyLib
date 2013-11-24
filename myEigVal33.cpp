@@ -43,6 +43,9 @@ int myEigVal33(int &dim, double** Mpp, complex<double>* EigVals){
         bool reality[3];
 
         monic_return=myMonic3(coeffs,EigVals,reality,allreal);
+        if(monic_return != 0){
+           cout << "monic_return non zero in EigVal33\n";
+        }
         
      return ireturn;
 }

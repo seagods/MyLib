@@ -55,6 +55,9 @@ int myEigVal44(int &dim, double** Mpp, complex<double>* EigVals){
         bool reality[4];
 
         monic_return=myMonic4(coeffs,EigVals,reality,allreal);
+        if(monic_return!=0){
+          cout << "monic_return not zero in EigVal44\n";
+        }
         
       
         

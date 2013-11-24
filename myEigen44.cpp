@@ -69,6 +69,9 @@ int myEigen44(int &dim, double** Mpp, complex<double>* EigVals, complex<double>*
     //    bool reality[4];
 
         monic_return=myMonic4(coeffs,EigVals,reality,allreal);
+        if(monic_return!=0){
+          cout << "monic_return not zero in Eigen44\n";
+        }
 
         double zero=0.0e0;
         double one=1.0e0;

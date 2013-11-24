@@ -28,6 +28,7 @@ int myGaussElim(int &dim, double** Mpp, double* rhsV, double* lhsV){
 
 
 	int klarge;
+        klarge=0;
 
         double absval;
         double Tol=1e-14;

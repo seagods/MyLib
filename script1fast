@@ -5,9 +5,13 @@ g++ -fPIC -Ofast -ffast-math -c -Wall  myMonic3.cpp
 g++ -fPIC -Ofast -ffast-math -c -Wall  myMonic4.cpp
 g++ -fPIC -Ofast -ffast-math -c -Wall  myEigVal44.cpp
 g++ -fPIC -Ofast -ffast-math -c -Wall  myEigen44.cpp
-gcc -fPIC -Ofast -ffast-math -c -Wall  mydbesy.f
-gcc -fPIC -Ofast -ffast-math -c -Wall  i1mach.f
-gcc -fPIC -Ofast -ffast-math -c -Wall  d1mach.f
-gcc -fPIC -Ofast -ffast-math -c -Wall  r1mach.f
-gcc -fPIC -Ofast -ffast-math -c -Wall  pimach.f
+g++ -fPIC -Ofast -ffast-math -c -Wall  myEigVal33.cpp
+g++ -fPIC -Ofast -ffast-math -c -Wall  myEigen33.cpp
+g++ -fPIC -Ofast -ffast-math -c -Wall  myPickem.cpp
+g++ -fPIC -Ofast -ffast-math -c -Wall  myRecoverMonic.cpp
+gfortran -fPIC -Ofast -ffast-math -c -Wall  mydbesy.f
+gfortran -fPIC -Ofast -ffast-math -c -Wall  i1mach.f
+gfortran -fPIC -Ofast -ffast-math -c -Wall  d1mach.f
+gfortran -fPIC -Ofast -ffast-math -c -Wall  r1mach.f
+gfortran -fPIC -Ofast -ffast-math -c -Wall  pimach.f
 

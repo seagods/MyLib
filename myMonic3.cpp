@@ -19,7 +19,7 @@ int myMonic3(double* realcoeffs, complex<double>* roots, bool* reality, bool& al
 
      double q,r,discrim;
 
-     double root3=1.7320508075688772;
+ //    double root3=1.7320508075688772;
      double root3over2=0.86602540378443860;
 
      a0=realcoeffs[0];
@@ -27,7 +27,7 @@ int myMonic3(double* realcoeffs, complex<double>* roots, bool* reality, bool& al
      a2=realcoeffs[2];
 
      double tolval=1.0e-10;  //tol for root polish
-     double tolvalreal=1.0e-15; //tol for deciding reality
+ //    double tolvalreal=1.0e-15; //tol for deciding reality
      int iqmax=10; //maximum number for Newton Raphson
 
      double a2sq=a2*a2;
