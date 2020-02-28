@@ -13,7 +13,9 @@ Programs actually compiled into libmylib:
  
 1:  programs written by me
 2:  my modifications of programs written by other people
-3:  programs  written by other people
+
+My Eigen33 and 44  and mymonic 3 and 4 use analytical solutions for cubic and quartic equations.
+
 
 
 **************************************************************************************
